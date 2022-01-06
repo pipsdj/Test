@@ -78,7 +78,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #38495f;
+		background: #0c213d;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -111,7 +111,8 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #2f2d3e !important;
+			color: #ffffff !important;
+			font-weight: bold;
 			border-bottom-color:transparent;
 		}
 
@@ -2175,13 +2176,13 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 4em 0;
+		margin: 0 0 1em 0;
 		position: relative;
 		text-align: center;
 	}
 
 		header.major:after {
-			background: #85aac5;
+			background: #024f94;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2250,7 +2251,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #85aac5;
+			border-color: #024f94;
 		}
 
 	select {
@@ -2353,7 +2354,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #85aac5;
+			border-color: #024f94;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2465,7 +2466,7 @@ input, select, textarea {
 			}
 
 		.icon.major {
-			background: #9cacbf;
+			background: #3b6598;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2565,11 +2566,12 @@ input, select, textarea {
 }
 #gallery-img{
 	margin-right: 80px;
-	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 
 #gallery-img a{
-	margin: 0;
+	margin:  0;
 	padding: 0;
 	border: 0;
 	float: left;
@@ -2607,6 +2609,7 @@ input, select, textarea {
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
+		
 		}
 
 			ul.alt li {
@@ -3086,7 +3089,7 @@ input, select, textarea {
 		}
 
 		.spotlight .image.main {
-			display: none;
+			display: block;
 		}
 
 			.spotlight .image.main img {
@@ -3158,15 +3161,15 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #85aac5;
+			border-color: #024f94;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #85aac5;
+			border-color: #024f94;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #85aac5;
+			border-color: #024f94;
 		}
 
 		.spotlight.inactive .content {
@@ -3255,7 +3258,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
 				background-color: #ffffff;
-				color: #85aac5 !important;
+				color: #024f94 !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3688,7 +3691,7 @@ body.is-touch #banner {
 
 				.spotlight .image.main {
 					display: block;
-					margin: 0;
+					margin: auto;
 					max-height: 40vh;
 					overflow: hidden;
 				}
@@ -3907,7 +3910,7 @@ body.is-touch #banner {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #85aac5;
+				background: #024f94;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -3950,7 +3953,7 @@ body.is-touch #banner {
 					}
 
 					#titleBar .toggle:before {
-						background: #85aac5;
+						background: #024f94;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
@@ -3985,7 +3988,7 @@ body.is-touch #banner {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #85aac5;
+				background: #024f94;
 				padding: 0.75em 1.25em;
 			}
 
@@ -4130,3 +4133,49 @@ body.is-touch #banner {
 					}
 
 	}
+
+	/*Price Plan*/
+	.price-plan-course{
+		display: grid;
+		width: auto, 1000px;
+		margin: auto;
+
+	}
+	.price-plan-course .plan-title{
+		position: relative;
+		top: 0;
+		font-weight: 800;
+		padding: 5px 15px;
+		margin: 0 auto;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		margin: 0;
+		display: inline-block;
+		background-color: #024f94;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	.price-plan-course .plan {
+		display: grid;
+		margin: auto;
+		width: auto;
+		position: relative;
+		justify-content: center;
+		padding: 25px;
+		background-color: #050814;
+		border: 3px solid rgba(252, 247, 247, 0.1);
+	  }
+	  .price-plan-course .plan-cost {
+		padding: 0px 10px 20px;
+	  }
+	  .price-plan-course .plan-price {
+	  font-family: "Roboto", Helvetica, sans-serif;
+		font-weight: 800;
+		font-size: 2.4em;
+		color: #ffffff;
+	  }
+	  .price-plan-course .plan-featured {
+		  
+		padding: 0px 10px 20px;
+	  }
+	  
